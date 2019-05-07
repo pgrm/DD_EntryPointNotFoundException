@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>Not.Working.Rendering</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Templates\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Not.Working.Common\Not.Working.Common.csproj" />
+  </ItemGroup>
+
+</Project>

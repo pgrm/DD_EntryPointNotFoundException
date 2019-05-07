@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace>Not.Working.Common</RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="8.1.0" />
+    </ItemGroup>
+
+</Project>
