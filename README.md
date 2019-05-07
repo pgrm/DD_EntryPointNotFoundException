@@ -16,7 +16,7 @@ Mappings that include collections are causing the `EntryPointNotFoundException`
 1. Run `dotnet publish -c Release .` In `src/Not.Working.Api`
 2. Copy over the `Dockerfile` into the generated publish folder under `src/Not.Working.Api/bin/Release/netcoreapp2.2/publish`
 3. In the publish folder run `docker build -t notworkingapp .` to create a docker image
-4. Run your docker image either from a docker compose file `docker-compose up -d` or `docker run -d -p 8080:80 --name myapp notworkingapp`
+4. Run your docker image using `docker run notworkingapp`
 5. Check the logs of your container and it should show the `EntryPointNotFoundException`
 
 ### Worth to mention
